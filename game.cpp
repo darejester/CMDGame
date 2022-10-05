@@ -6,6 +6,7 @@ class movement
 {
 	public:
 		movement() { cout << "movement class used" << endl; }
+		void printLocation() { cout << "X: " << location[0] << " " << "Y: " << location[1] << endl; }
 		void moveUp() { location[0]++; }
 		void moveDown() { location[0]--; }
 		void moveLeft() { location[1]--; }
@@ -23,7 +24,7 @@ class character: public movement
 {
 	public:
 		character() { cout << "character class used" << endl; }
-		void printLocation() { cout << "X: " << location[0] << " " << "Y: " << location[1] << endl; }
+		
 
 	private:
 		
