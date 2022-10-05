@@ -4,39 +4,38 @@ using namespace std;
 
 class movement
 {
-	public:
-		movement() { cout << "movement class used" << endl; }
-		void printLocation() { cout << "X: " << location[0] << " " << "Y: " << location[1] << endl; }
-		void moveUp() { location[0]++; }
-		void moveDown() { location[0]--; }
-		void moveLeft() { location[1]--; }
-		void moveRight() { location[1]++; }
+public:
+	movement() { cout << "movement class used" << endl; }
+	void printLocation() { cout << "X: " << location[0] << " " << "Y: " << location[1] << endl; }
+	void moveUp() { location[0]++; }
+	void moveDown() { location[0]--; }
+	void moveLeft() { location[1]--; }
+	void moveRight() { location[1]++; }
 
-	protected:
-		// x, y
-		int location[3] = { 0,0 };
-
-	private:
-		
+private:
+	// x, y
+	int location[3] = { 0,0 };
 };
 
-class character: public movement
+class character : public movement
 {
-	public:
-		character() { cout << "character class used" << endl; }
-		
+public:
+	character() { cout << "character class used" << endl; }
 
-	private:
-		
-		
+
+private:
+
+
 
 };
+
+
 
 int main()
 {
 	character player;
 	int input = 0;
-	while (1) 
+	while (1)
 	{
 		cout << "what to do? " << endl;
 		cout << "1 = move up, 2 = move down, 3 = move right, 4 = move left" << endl;
@@ -67,6 +66,6 @@ int main()
 			cout << "input doesnt do anything..." << endl;
 		}
 	}
-	
+
 	return 0;
 }
