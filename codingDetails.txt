@@ -1,1 +1,3 @@
 language: C++
+include header files with signatures
+  include .cpp files of headers for the body
