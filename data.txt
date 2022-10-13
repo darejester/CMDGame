@@ -3,6 +3,8 @@ Player
   health
   stamina
   mana
+  
+    
+movement
   coordinates/location
-  movement
   
